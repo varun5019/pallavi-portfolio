@@ -234,6 +234,48 @@ a { color: inherit; text-decoration: none; }
   display: block;
 }
 
+/* IMAGE GALLERY — natural-height process grid */
+.cs-gallery {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto 8px;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+.cs-gallery > figure {
+  margin: 0;
+  background: var(--cream-2);
+  border: 1px solid var(--ink);
+  overflow: hidden;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.cs-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FEATURE IMAGE — single full-width process image */
+.cs-feature {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto 8px;
+  padding: 0 40px;
+}
+.cs-feature img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: var(--cream-2);
+  border: 1px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
 /* INTRO BLOCK */
 .cs-intro {
   position: relative;
@@ -745,6 +787,8 @@ a { color: inherit; text-decoration: none; }
   .cs-pair { grid-template-columns: 1fr; }
   .cs-caption { padding: 0 20px; margin-bottom: 50px; }
   .cs-mid-head { padding: 0 20px; margin: 60px auto 40px; }
+  .cs-gallery { grid-template-columns: 1fr; padding: 0 20px; }
+  .cs-feature { padding: 0 20px; }
   .cs-palette { padding: 0 20px; gap: 14px; }
   .cs-palette-item { min-width: 100px; }
   .cs-next { padding: 60px 20px; }
