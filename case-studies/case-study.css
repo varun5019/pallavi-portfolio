@@ -202,6 +202,27 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
 }
 
+/* HERO IMAGE DUO — side-by-side layout */
+.cs-hero-image-duo {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.cs-hero-image-duo .cs-hero-image-frame {
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid var(--ink);
+  overflow: hidden;
+  background: var(--cream-2);
+  box-shadow: 8px 8px 0 var(--ink);
+  height: fit-content;
+}
+.cs-hero-image-duo .cs-hero-image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* INTRO BLOCK */
 .cs-intro {
   position: relative;
@@ -508,7 +529,8 @@ a { color: inherit; text-decoration: none; }
 .cs-fullbleed img,
 .cs-pair > div img {
   width: 100%; height: 100%;
-  object-fit: cover; display: block;
+  object-fit: contain; display: block;
+  background: var(--cream-2);
 }
 
 /* SWATCH GRID — labelled woven swatches */

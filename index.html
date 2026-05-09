@@ -872,6 +872,39 @@
 
   /* small util */
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+  /* Alexander McQueen card — side-by-side images with original heights */
+  .folder[data-cs="03"] .folder-stack {
+    position: relative;
+    aspect-ratio: auto;
+    overflow: visible;
+    display: flex;
+    gap: 12px;
+    height: auto;
+  }
+  .folder[data-cs="03"] .folder-page {
+    position: relative;
+    flex: 1;
+    inset: auto;
+    background: var(--cream-2);
+    border: 1px solid var(--ink);
+    overflow: hidden;
+    transform: none !important;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .folder[data-cs="03"] .folder-page.p-1 {
+    display: none !important;
+  }
+  .folder[data-cs="03"] .folder-page-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+
 </style>
 </head>
 <body>
@@ -963,7 +996,7 @@
             <img class="folder-page-img" src="assets/cs01/swatch-02-twill.jpeg" alt="Hand-drawn translation of an orchid into a striped weave plan" />
           </div>
           <div class="folder-page p-1" data-label="Material exploration swatch">
-            <img class="folder-page-img" src="assets/cs01/swatch-06-material-detail.jpeg" alt="Close-up of material exploration swatch with velvet, beads and metallic ribbon" />
+            <img class="folder-page-img" src="assets/cs01/swatch-06-material-full.jpeg" alt="Close-up of material exploration swatch with velvet, beads and metallic ribbon" />
           </div>
         </div>
         <div class="folder-info">
@@ -1012,21 +1045,27 @@
       </div>
     </a>
 
-    <a href="case-studies/print-design.html" class="folder" data-cs="03">
+    <a href="case-studies/alexander-mcqueen.html" class="folder" data-cs="03">
       <span class="folder-tab">CS / 03 — Open file</span>
       <div class="folder-body">
         <div class="folder-stack">
-          <div class="folder-page p-3 swatch-4" data-label="Print repeat experiments"></div>
-          <div class="folder-page p-2 swatch-10" data-label="Color story / palette study"></div>
-          <div class="folder-page p-1 swatch-5" data-label="Surface Pattern Series — campaign image"></div>
+          <div class="folder-page p-3" data-label="Geometric silhouette detail">
+            <img class="folder-page-img" src="assets/cs03/1762939539770.jpeg" alt="Line drawing illustration of structured McQueen silhouette with intricate details" />
+          </div>
+          <div class="folder-page p-2" data-label="Draped silhouette study">
+            <img class="folder-page-img" src="assets/cs03/1762939532157.jpeg" alt="Illustration showcasing draped fabric silhouette with flowing lines" />
+          </div>
+          <div class="folder-page p-1" data-label="Alexander McQueen silhouette research">
+            <img class="folder-page-img" src="assets/cs03/1762939529036.jpeg" alt="Line drawing illustration of an Alexander McQueen silhouette from Fall 2025 collection" />
+          </div>
         </div>
         <div class="folder-info">
           <div class="folder-info-text">
-            <h3 class="folder-name">In Bloom — Surface Pattern &amp; Print Series</h3>
+            <h3 class="folder-name">Vision &amp; Silhouette — Alexander McQueen Study</h3>
             <div class="folder-meta">
-              <span>2024</span>
-              <span>Surface print</span>
-              <span>Repeat dev.</span>
+              <span>2025</span>
+              <span>Fashion design · Silhouette</span>
+              <span>5 illustrations</span>
             </div>
           </div>
           <span class="folder-arrow" aria-hidden="true">
