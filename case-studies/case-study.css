@@ -223,6 +223,17 @@ a { color: inherit; text-decoration: none; }
   display: block;
 }
 
+/* HERO IMAGE SINGLE — keep the full source image visible */
+.cs-hero-image-single .cs-hero-image-frame {
+  aspect-ratio: auto;
+  height: auto;
+}
+.cs-hero-image-single .cs-hero-image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* INTRO BLOCK */
 .cs-intro {
   position: relative;
@@ -566,7 +577,7 @@ a { color: inherit; text-decoration: none; }
 }
 .cs-swatch-tag .num { font-family: var(--mono); font-size: 11px; opacity: 0.85; }
 .cs-swatch-img {
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/5;
   overflow: hidden;
   background: var(--ink);
 }

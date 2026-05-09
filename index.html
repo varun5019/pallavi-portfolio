@@ -424,6 +424,10 @@
     display: block;
   }
 
+  .folder[data-cs="04"] .folder-stack {
+    min-height: 408px;
+  }
+
   .folder-info {
     padding: 24px 8px 6px;
     display: flex;
@@ -863,6 +867,7 @@
     .folder:hover .folder-body { transform: none; box-shadow: 4px 4px 0 var(--ink); }
     .folder:hover .folder-page.p-3 { transform: translate(20px, -10px) rotate(6deg); }
     .folder:hover .folder-page.p-2 { transform: translate(10px, -6px) rotate(3deg); }
+    .folder[data-cs="04"] .folder-stack { min-height: 408px; }
   }
   @media (max-width: 520px) {
     .hero-meta-right span:first-child { display: none; }
@@ -904,6 +909,9 @@
     display: block;
   }
 
+  .folder[data-cs="04"] .folder-info {
+    padding-bottom: 9px;
+  }
 
 </style>
 </head>
@@ -1079,17 +1087,23 @@
       <span class="folder-tab">CS / 04 — Open file</span>
       <div class="folder-body">
         <div class="folder-stack">
-          <div class="folder-page p-3 swatch-12" data-label="Weave samples · loom studies"></div>
-          <div class="folder-page p-2 swatch-8" data-label="Leather work · craft trials"></div>
-          <div class="folder-page p-1 swatch-11" data-label="Material Studies — process flatlay"></div>
+          <div class="folder-page p-3" data-label="Front view · leather purse">
+            <img class="folder-page-img" src="assets/cs04/1762936133373.jpeg" alt="Hand-stitched leather purse front view in glossy brown leather" />
+          </div>
+          <div class="folder-page p-2" data-label="Back view · construction detail">
+            <img class="folder-page-img" src="assets/cs04/1762936136108.jpeg" alt="Hand-stitched leather purse back view with pocket panel and strap attachments" />
+          </div>
+          <div class="folder-page p-1" data-label="Front view · leather purse">
+            <img class="folder-page-img" src="assets/cs04/1762936133373.jpeg" alt="Hand-stitched leather purse front view in glossy brown leather" />
+          </div>
         </div>
         <div class="folder-info">
           <div class="folder-info-text">
-            <h3 class="folder-name">Hand &amp; Loom — Material Studies &amp; Craft Explorations</h3>
+            <h3 class="folder-name">Hide &amp; Stitch — Leather Purse Study</h3>
             <div class="folder-meta">
-              <span>2024</span>
-              <span>Weave · Leather</span>
-              <span>Process</span>
+              <span>2024 – 25</span>
+              <span>Leatherwork</span>
+              <span>1 purse</span>
             </div>
           </div>
           <span class="folder-arrow" aria-hidden="true">
